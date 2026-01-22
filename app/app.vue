@@ -1,7 +1,8 @@
 <template>
   <div>
-    <!-- <NuxtRouteAnnouncer />
-    <NuxtWelcome /> -->
-    <LandscapeBG />
+    <Home />
   </div>
 </template>
+
+<script setup>
+</script>
