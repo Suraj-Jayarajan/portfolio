@@ -25,6 +25,8 @@ logs
 
 # Node.js dependencies
 node_modules/
+package-lock.json
+yarn.lock
 
 # Nuxt build output
 .nuxt/
