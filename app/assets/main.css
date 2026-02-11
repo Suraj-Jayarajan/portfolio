@@ -989,4 +989,24 @@ p {
         inset 0em 0em 0em 2px #c2ccff,
         inset 0.2em 0.3em 0.2em -0.2em #c2ccff,
         inset 10.8em 11.3em 2em -10.5em #d4e6ff2f;
-} 
+}
+
+.proofbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #d8ecf8;
+    line-height: 1;
+}
+
+.proofbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.proofbar li {
+    margin-bottom: 0.5em;
+}
+
+.proofbar li strong {
+    color: #98c0ef;
+}

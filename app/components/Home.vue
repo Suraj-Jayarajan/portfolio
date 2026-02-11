@@ -1,11 +1,11 @@
 <template>
     <!-- design inspired by https://www.authkit.com/ -->
     <div class="header">
-        <h2><a href="https://codepen.io/RAFA3L" target="_blank" rel="noopener noreferrer">RAFA</a></h2>
+        <h2><a href="https://codepen.io/RAFA3L" target="_blank" rel="noopener noreferrer"></a></h2>
         <div class="mid-spot" onclick="document.body.classList.toggle('gold');"></div>
         <button class="contact-btn">
             <span class="glow"></span>
-            <span class="contact-btn-content">Contact Us</span>
+            <span class="contact-btn-content">Contact Me</span>
         </button>
 
         <div class="spotlight">
@@ -42,7 +42,8 @@
         </div>
     </div>
     <p class="heroP">Senior Full-Stack Developer<br>
-        Laravel · Vue · Nuxt · n8n · AWS · FastAPI</p>
+        Laravel · Vue · Nuxt · n8n · AWS · FastAPI</br>
+    </p>
     <div class="mountains">
         <div></div>
         <div></div>
@@ -55,12 +56,27 @@
             <div></div>
             <div></div>
         </div>
-        <p class="subt">Revolutionary by design</p>
-        <h3 class="title">Harness. Empower.<br>
-            Unmatched Versatility.</h3>
-        <p class="subp">At the core lies our revolutionary framework, <br>ensuring adaptability across all application
-            architectures.</p>
+        <p class="subt">Build With Me</p>
+        <h3 class="title"> Flexible by Design.<br>
+            Scalable by Nature.</h3>
+
+        <div class="">
+            <p class="subp">
+                I architect and ship production systems—clean backend foundations, modern frontends, and cloud
+                infrastructure that won’t limit growth
+            </p>
+            <div class="subp proofbar mt-4">
+                <ul>
+                    <li><strong>7+ years</strong> building in production</li>
+                    <li><strong>16 projects</strong> shipped</li>
+                    <li><strong>Backend + frontend + infra</strong> ownership</li>
+                    <li><strong>Automation-first</strong> mindset (n8n)</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
+
 </template>
 
 <script setup>
