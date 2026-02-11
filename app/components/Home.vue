@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="heroSubP">
-        <p>Introducing</p>
+        <p>Engineering with intent</p>
     </div>
     <div class="hero">
         <div class="heroT">
@@ -41,8 +41,8 @@
             <h2>Suraj Jayarajan</h2>
         </div>
     </div>
-    <p class="heroP">The world's best platform, <br>
-        powered by EclipxOS + React.</p>
+    <p class="heroP">Senior Full-Stack Developer<br>
+        Laravel · Vue · Nuxt · n8n · AWS · FastAPI</p>
     <div class="mountains">
         <div></div>
         <div></div>

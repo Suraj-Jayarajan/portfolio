@@ -128,7 +128,7 @@ h2 a {
     width: 1.8em;
     height: 1.8em;
     border-radius: 50%;
-    background: black;
+    background: #d8ecf8;
     box-shadow: 0 0 1em 0 #98c0ef;
     cursor: pointer;
     transition: box-shadow 1s ease-in-out;
