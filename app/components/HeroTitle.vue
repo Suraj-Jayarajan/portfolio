@@ -1,12 +1,11 @@
 <template>
-    <div class="heroTitleWrap pointer-events-none absolute left-0 right-0 translate-y-[-1.6e] opacity-0">
-        <h2
-            class="heroTitleText absolute left-0 right-0 mx-auto w-fit font-semibold [font-size:clamp(2.8rem,6vw+1rem,7rem)]">
+    <div class="heroTitleWrap pointer-events-none opacity-0">
+        <h2 class="heroTitleText font-semibold absolute left-0 right-0 [font-size:clamp(2.8rem,8vh+1rem,7rem)]">
             {{ text }}
         </h2>
 
         <h2
-            class="heroTitleText heroTitleText--glow absolute left-0 right-0 mx-auto w-fit font-semibold [font-size:clamp(2.8rem,6vw+1rem,7rem)]">
+            class="heroTitleText heroTitleText--glow relative left-0 top-0 font-semibold [font-size:clamp(2.8rem,8vh+1rem,7rem)]">
             {{ text }}
         </h2>
     </div>

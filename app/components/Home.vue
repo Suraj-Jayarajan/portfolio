@@ -36,10 +36,10 @@
         <p>Engineering with intent</p>
     </div>
     <div class="hero">
-        <divS class="heroT">
+        <divS class="heroT font-hubot">
             <h2>Suraj Jayarajan</h2>
             <h2>Suraj Jayarajan</h2>
-        </divS>SS
+        </divS>
     </div>
     <p class="heroP">Senior Full-Stack Developer<br>
         Laravel · Vue · Nuxt · n8n · AWS · FastAPI</br>

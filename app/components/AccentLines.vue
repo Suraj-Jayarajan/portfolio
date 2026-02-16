@@ -3,20 +3,12 @@
   <div class="accent-lines" :style="rootStyle" aria-hidden="true">
     <!-- horizontals -->
     <div>
-      <div
-        v-for="(t, i) in hTopsComputed"
-        :key="`h-${i}`"
-        :style="{ top: t }"
-      ></div>
+      <div v-for="(t, i) in hTopsComputed" :key="`h-${i}`" :style="{ top: t }"></div>
     </div>
 
     <!-- verticals -->
     <div>
-      <div
-        v-for="(pos, i) in vPositionsComputed"
-        :key="`v-${i}`"
-        :style="pos"
-      ></div>
+      <div v-for="(pos, i) in vPositionsComputed" :key="`v-${i}`" :style="pos"></div>
     </div>
   </div>
 </template>
@@ -131,7 +123,7 @@ const rootStyle = computed(() => ({
   --accent-lines-clr: rgba(186, 215, 247, 0.18);
 }
 
-.accent-lines > div {
+.accent-lines>div {
   position: absolute;
   top: 0;
   right: 0;
@@ -142,7 +134,7 @@ const rootStyle = computed(() => ({
 }
 
 /* horizontals */
-.accent-lines > div:nth-child(1) > div {
+.accent-lines>div:nth-child(1)>div {
   position: absolute;
   top: 0;
   right: 0;
@@ -157,7 +149,7 @@ const rootStyle = computed(() => ({
 }
 
 /* verticals */
-.accent-lines > div:nth-child(2) > div {
+.accent-lines>div:nth-child(2)>div {
   position: absolute;
   top: 0;
   right: 0;
@@ -176,6 +168,7 @@ const rootStyle = computed(() => ({
     opacity: 0;
     scale: 0;
   }
+
   100% {
     opacity: 1;
     scale: 1;
@@ -188,8 +181,8 @@ const rootStyle = computed(() => ({
    CSS variables derived from props. ---- */
 
 /* dots */
-.accent-lines > div:nth-child(1) > div::before,
-.accent-lines > div:nth-child(1) > div::after {
+.accent-lines>div:nth-child(1)>div::before,
+.accent-lines>div:nth-child(1)>div::after {
   content: "";
   display: none;
   position: absolute;
@@ -208,66 +201,74 @@ const rootStyle = computed(() => ({
 }
 
 /* keep the original “show dot” behavior by line index (3,4,5) */
-.accent-lines > div:nth-child(1) > div:nth-child(3)::before,
-.accent-lines > div:nth-child(1) > div:nth-child(4)::before,
-.accent-lines > div:nth-child(1) > div:nth-child(5)::before {
+.accent-lines>div:nth-child(1)>div:nth-child(3)::before,
+.accent-lines>div:nth-child(1)>div:nth-child(4)::before,
+.accent-lines>div:nth-child(1)>div:nth-child(5)::before {
   display: block;
-  left: 30vw; /* proportional replacement for 24em */
+  left: 30vw;
+  /* proportional replacement for 24em */
 }
-.accent-lines > div:nth-child(1) > div:nth-child(3)::after,
-.accent-lines > div:nth-child(1) > div:nth-child(4)::after,
-.accent-lines > div:nth-child(1) > div:nth-child(5)::after {
+
+.accent-lines>div:nth-child(1)>div:nth-child(3)::after,
+.accent-lines>div:nth-child(1)>div:nth-child(4)::after,
+.accent-lines>div:nth-child(1)>div:nth-child(5)::after {
   display: block;
-  right: 30vw; /* proportional replacement for 24em */
+  right: 30vw;
+  /* proportional replacement for 24em */
 }
 
 /* diagonal mini-lines for first two horizontals (proportional replacement) */
-.accent-lines > div:nth-child(1) > div:nth-child(2)::before,
-.accent-lines > div:nth-child(1) > div:nth-child(2)::after {
+.accent-lines>div:nth-child(1)>div:nth-child(2)::before,
+.accent-lines>div:nth-child(1)>div:nth-child(2)::after {
   display: block;
   width: 5vw;
   height: 1px;
   border-radius: 0;
   opacity: 0.12;
 }
-.accent-lines > div:nth-child(1) > div:nth-child(2)::before {
+
+.accent-lines>div:nth-child(1)>div:nth-child(2)::before {
   right: 30vw;
   rotate: 45deg;
   translate: -2.5vw 6vh;
 }
-.accent-lines > div:nth-child(1) > div:nth-child(2)::after {
+
+.accent-lines>div:nth-child(1)>div:nth-child(2)::after {
   right: 30vw;
   rotate: -45deg;
   translate: -2.5vw 6vh;
 }
 
-.accent-lines > div:nth-child(1) > div:nth-child(1)::before,
-.accent-lines > div:nth-child(1) > div:nth-child(1)::after {
+.accent-lines>div:nth-child(1)>div:nth-child(1)::before,
+.accent-lines>div:nth-child(1)>div:nth-child(1)::after {
   display: block;
   width: 5vw;
   height: 1px;
   border-radius: 0;
   opacity: 0.12;
 }
-.accent-lines > div:nth-child(1) > div:nth-child(1)::before {
+
+.accent-lines>div:nth-child(1)>div:nth-child(1)::before {
   left: 30vw;
   rotate: 45deg;
   translate: 2.5vw 18vh;
 }
-.accent-lines > div:nth-child(1) > div:nth-child(1)::after {
+
+.accent-lines>div:nth-child(1)>div:nth-child(1)::after {
   left: 30vw;
   rotate: -45deg;
   translate: 2.5vw 18vh;
 }
 
-.accent-lines > div:nth-child(1) > div:nth-child(2)::before,
-.accent-lines > div:nth-child(1) > div:nth-child(2)::after {
+.accent-lines>div:nth-child(1)>div:nth-child(2)::before,
+.accent-lines>div:nth-child(1)>div:nth-child(2)::after {
   opacity: 0;
   scale: 0;
   animation: accentload2 2s ease-out 2.4s forwards;
 }
-.accent-lines > div:nth-child(1) > div:nth-child(1)::before,
-.accent-lines > div:nth-child(1) > div:nth-child(1)::after {
+
+.accent-lines>div:nth-child(1)>div:nth-child(1)::before,
+.accent-lines>div:nth-child(1)>div:nth-child(1)::after {
   opacity: 0;
   scale: 0;
   animation: accentload3 2s ease-out 2.4s forwards;
@@ -279,24 +280,29 @@ const rootStyle = computed(() => ({
     scale: 0;
     transform: rotate(360deg);
   }
+
   50% {
     scale: 0;
   }
+
   100% {
     opacity: 0.12;
     scale: 1;
     transform: rotate(0deg);
   }
 }
+
 @keyframes accentload3 {
   0% {
     opacity: 0;
     scale: 0;
     transform: rotate(-360deg);
   }
+
   50% {
     scale: 0;
   }
+
   100% {
     opacity: 0.12;
     scale: 1;

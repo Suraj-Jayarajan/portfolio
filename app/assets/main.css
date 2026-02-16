@@ -63,7 +63,7 @@ body.gold .content-section ::after {
     filter: invert(1) brightness(4.4) opacity(1);
 }
 
-h2 {
+h2, font-hubot {
     font-family: 'Hubot-Sans', sans-serif;
 }
 
